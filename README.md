@@ -1,7 +1,7 @@
 # AP-scheme-for-LFP-equation
 This project provides code for paper (). 
 # Precompute fractional laplacian matrix
-One can use following code to compute the computatioanl matrix for different parameters; we also provide all the precomputed matrix we used in the paper.
+One can use following code to compute the precomputed fractional laplacian matrix for different parameters; we also provide all the precomputed matrix we used in the paper.
 ## s=0.5 (alpha=1)
 ```
 M_pre_pl_alp1.m
@@ -28,8 +28,9 @@ LF_hom(128,0.8,1,3,300,1)
 ```
 # Spatially inhomogeneuous case
 ## When \epsilon =1, compare AP scheme with IMEX scheme
-## For Fig~7,8, following example is about s=0.8, gaussian initial condition
+## For Fig~7,8, following example is about s=0.8, gaussian initial condition (need to run LF_hom.m first to get numerical equilibrium).
 ```
+LF_hom(128,0.8,1,3,300,1)
 LFP_AP_NHE_ssn(100,128,pi,3,0.8,1,300,1,0.05,0.5,2,1)
 ```
 
