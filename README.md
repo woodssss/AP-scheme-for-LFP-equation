@@ -19,9 +19,29 @@ compute_fl
 FL_Error_vs_N(s,L,l_lim,IC)
 ```
 
-# Spatially inhomogeneuous case
-## generate Fig~4,5,6, following example is about s=0.4
+# Spatially homogeneuous case
+## For Fig~4,5,6, following example is about s=0.4
 ```
 LF_hom(128,0.8,1,3,300,1)
+```
+# Spatially inhomogeneuous case
+## When \epsilon =1, compare AP scheme with IMEX scheme
+## For Fig~7,8, following example is about s=0.6, gaussian initial condition
+```
+
+```
+## First order in time accuracy
+```
+
+```
+
+## Energy stability
+```
+
+```
+
+## AP property
+```
+
 ```
 
