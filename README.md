@@ -1,6 +1,7 @@
 # AP-scheme-for-LFP-equation
 This project provides code for paper (). 
 # Precompute fractional laplacian matrix
+One can use following code to compute the computatioanl matrix for different parameters; we also provide all the precomputed matrix we used in the paper.
 ## s=0.5 (alpha=1)
 ```
 M_pre_pl_alp1.m
@@ -10,13 +11,14 @@ M_pre_pl_alp1.m
 M_pre_pl_new.m
 ```
 # Compute fractional laplacian
+Fo example
 ## Fig 1,2
 ```
-compute_fl
+compute_fl(128,3,0.4,300,2)
 ```
 ## Fig 3
 ```
-FL_Error_vs_N(s,L,l_lim,IC)
+FL_Error_vs_N(0.4,3,300,2)
 ```
 
 # Spatially homogeneuous case
