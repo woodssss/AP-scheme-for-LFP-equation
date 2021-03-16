@@ -1,0 +1,21 @@
+clear;
+close all;
+load('LFP_NHE_alpha_1p6_epsi_1_Nv_128_Nx_200_dt_zpz1_T_zp1_IC_1.mat')
+%load('LFP_NHE_alpha_zp8_epsi_1_Nv_64_Nx_50_dt_zpz5_T_zp5_IC_2.mat')
+plot(x,real(rho_approx),'b-o','Linewidth',2)
+%plot(xx,real(rho_imx),'b--','Linewidth',2)
+hold on
+%load('VLFP_sin_fft_Ns_128_IC_1_epsi_1_alpha_zp8_t_zp1.mat')
+%load('VLFP_sin_fft_Ns_128_IC_2_epsi_1_alpha_1p2_t_1.mat')
+load('LFP_NHE_alpha_1p6_epsi_1_Nv_256_Nx_400_dt_zpz1_T_zp1_IC_1.mat')
+%load('LFP_NHE_alpha_zp8_epsi_1_Nv_128_Nx_200_dt_zpz5_T_zp5_IC_2.mat')
+plot(xx,rho_imx,'r--','Linewidth',2)
+%plot(x,rho,'r*','Linewidth',2)
+legend('\rho by mirco-macro scheme', 'reference \rho by IMEX', 'Location','northwest')
+title(['\epsilon = ', num2str(epsi), ' s=', num2str(s) ' t=', num2str(T), ])
+xlabel('x')
+xlim([-3,3])
+ylabel('\rho')
+%ylim([0,1])
+set(gca,'FontSize',30)
+set(gcf,'position',[1,1,1440,900])
