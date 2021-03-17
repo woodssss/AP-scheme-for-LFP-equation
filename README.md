@@ -1,5 +1,5 @@
 # AP-scheme-for-LFP-equation
-This project provides code for paper (). 
+This project provides code for paper [An asymptotic preserving scheme for L\'{e}vy-Fokker-Planck equation with fractional diffusion limit](https://arxiv.org/abs/2103.08848). 
 # Precompute fractional laplacian matrix
 One can use following code to compute the precomputed fractional laplacian matrix for different parameters; we also provide all the precomputed matrix we used in the paper.
 ## s=0.5 (alpha=1)
